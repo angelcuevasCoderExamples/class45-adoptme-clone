@@ -3,7 +3,7 @@ const petModel = require("./models/Pet.js");
 class Pet {
 
     get = (params) =>{
-        return petModel.find(params)
+        return petModel.find(params).lean();
     }
 
     getBy = (params) =>{
